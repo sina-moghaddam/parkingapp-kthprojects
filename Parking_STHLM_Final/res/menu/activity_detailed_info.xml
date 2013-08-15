@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    
+    <item
+        android:id="@+id/unfavorite_action"
+        android:icon="@drawable/unfavorite"
+        android:showAsAction="always"
+        android:title="@string/action_menu_favorite">
+        </item>
+        
+    <item
+        android:id="@+id/favorite_action"
+        android:icon="@drawable/favorite"
+        android:showAsAction="always"
+        android:title="@string/action_menu_favorite">
+    </item>
+    <item
+        android:id="@+id/menu_item_share_action_provider_action_bar"
+        android:actionProviderClass="android.widget.ShareActionProvider"
+        android:showAsAction="always"
+        android:title="@string/action_bar_share_with"/>
+
+</menu>

@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainFrag"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ShowMapActivity" >
+
+    <!-- <fragment
+        android:id="@+id/parkingList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="" />-->
+   	<ListView
+        android:id="@+id/parkingListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        >
+    </ListView>
+    
+        <ImageButton
+            android:id="@+id/sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/parkingListView"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:contentDescription="AndroidlenegdView"
+            android:src="@drawable/legend" />
+
+</RelativeLayout>

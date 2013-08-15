@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainFrag"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".ShowMapActivity" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="com.google.android.gms.maps.MapFragment" />
+
+    <ZoomControls
+        android:id="@+id/zoomControls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/legendImage"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@id/legendImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="AndroidlenegdView"
+        android:src="@drawable/legend" />
+
+</RelativeLayout>
